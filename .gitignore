@@ -1,0 +1,10 @@
+.vscode
+backup_cal
+mypackages/__pychache__
+mypackages/config.py
+archive
+geckodriver.exe
+geckodriver.log
+*.ics
+*.vcf
+run_script.bat 
