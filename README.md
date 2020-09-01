@@ -1,6 +1,6 @@
 ## About The Project
 
-![alt text](https://github.com/marwonn/nextcloud_calendar_adressbook_backup_tool/blob/master/img/1.JPG&raw=true)
+![alt text](https://github.com/marwonn/nextcloud_calendar_adressbook_backup_tool/blob/master/img/1.JPG)
 
 The idea of the project was to save the nextcloud calendar and adressbook files for backup reasons. Personally, this was the more approbiate way of backing up my files than saving the SQL-Database and extract the calendar items from there. 
 
