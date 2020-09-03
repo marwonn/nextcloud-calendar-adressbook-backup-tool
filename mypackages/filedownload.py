@@ -30,10 +30,10 @@ def start_backup():
     url = Config.nextcloud_url + "remote.php/dav/"
 
     url_list = []
-    
+
     for i in Config.name_of_calendars:
         url_list.append(url + "calendars/" + Config.username + "/" + i + "?export")
-  
+
     url_list.append(url + "addressbooks/users/" + Config.username + "/contacts/?export")
 
 
