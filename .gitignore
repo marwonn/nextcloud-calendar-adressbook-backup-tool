@@ -1,6 +1,6 @@
 .vscode
 backup_cal
-mypackages/__pychache__
+mypackages/*pychache*
 mypackages/config.py
 archive
 geckodriver.exe

@@ -26,15 +26,16 @@ def start_backup():
     driver.find_element_by_id("submit-wrapper").click()
 
 
-# List of the different calendars and the adressbook
-# Not needed calendars and/or adressbooks can be removed from the list
+# Creates list of the different calendars and add the adressbook
     url = Config.nextcloud_url + "remote.php/dav/"
 
-    url_list = [url + Config.url_calendar_1,
-                url + Config.url_calendar_2,
-                url + Config.url_calendar_3,
-                url + Config.url_calendar_4,
-                url + Config.url_adressbook]
+    url_list = []
+    
+    for i in Config.name_of_calendars:
+        url_list.append(url + "calendars/" + Config.username + "/" + i + "?export")
+  
+    url_list.append(url + "addressbooks/users/" + Config.username + "/contacts/?export")
+
 
 # Download section wrapped in a progressbar
     for i in progressbar.progressbar(url_list):

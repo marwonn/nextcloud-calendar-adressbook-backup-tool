@@ -11,7 +11,7 @@ def wifi_check():
     results = results.replace("\n", "")
     results = results.split(" ")
 
-    if Config.wifi_ssid_1 or Config.wifi_ssid_2 in results:
+    if Config.wifi_ssid in results:
         print("connected to known network!")
         time.sleep(2)
     else:
